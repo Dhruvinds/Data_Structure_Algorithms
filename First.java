@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class First{
     public static void main(String[] args){
         // int num = 55;
@@ -12,8 +14,18 @@ public class First{
         // Boolean check_value = true;
         // System.out.println(check_value);
 
-        byte a = 10;
-        System.out.println(a);
+        // byte a = 10;
+        // System.out.println(a);
+
+        // Input :
+
+        Scanner sc = new Scanner(System.in);
+
+        // String first_name = sc.next();
+        // System.out.println(f_name);
+
+        String last_name = sc.nextLine();
+        System.out.println(last_name);
     
     }
 }

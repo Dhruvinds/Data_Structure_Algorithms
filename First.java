@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class First{
     public static void main(String[] args){
@@ -22,10 +22,14 @@ public class First{
         Scanner sc = new Scanner(System.in);
 
         // String first_name = sc.next();
-        // System.out.println(f_name);
+        // System.out.println(first_name);
 
-        String last_name = sc.nextLine();
-        System.out.println(last_name);
-    
+        // String last_name = sc.nextLine();
+        // System.out.println(last_name);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int product = a * b;
+        System.out.println("product of: " + product);
     }
 }

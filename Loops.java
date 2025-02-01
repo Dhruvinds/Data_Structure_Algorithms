@@ -61,7 +61,7 @@ public class Loops {
         // }
         // System.out.println("I am out of the loops!");
 
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
 
         // do {
         // System.out.println("Enter your number: ");
@@ -82,12 +82,36 @@ public class Loops {
         // }
 
         // do {
-        //     System.out.println("Enter number: ");
-        //     int n = sc.nextInt();
-        //     if(n % 10 == 0){
-        //         continue;
-        //     }
-        //     System.out.println(n);
+        // System.out.println("Enter number: ");
+        // int n = sc.nextInt();
+        // if(n % 10 == 0){
+        // continue;
+        // }
+        // System.out.println(n);
         // } while (true);
+
+        // Prime or not prime!
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        boolean isPrime = true;
+
+        if (n == 2) {
+            System.out.println("Number is Prime");
+        } else {
+            // for optimize -> for non optimize n-1
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    isPrime = false;
+                }
+            }
+
+            if (isPrime == true) {
+                System.out.println("Number is Prime");
+            } else {
+                System.out.println("Number is not Prime");
+            }
+        }
+
     }
 }

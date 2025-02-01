@@ -1,4 +1,4 @@
-// import java.util.*;
+import java.util.*;
 
 public class Loops {
     public static void main(String args[]) {
@@ -47,18 +47,47 @@ public class Loops {
 
         // int count = 1;
         // do {
-        //     System.out.println(count + " " + "Hello Java!");
-        //     count++;
+        // System.out.println(count + " " + "Hello Java!");
+        // count++;
         // } while (count <= 10);
 
         // Break Statement:
 
         // for(int i = 1 ; i<=5; i++){
-        //     if(i==3){
-        //         break;
-        //     }
-        //     System.out.println(i);
+        // if(i==3){
+        // break;
+        // }
+        // System.out.println(i);
         // }
         // System.out.println("I am out of the loops!");
+
+        Scanner sc = new Scanner(System.in);
+
+        // do {
+        // System.out.println("Enter your number: ");
+        // int n = sc.nextInt();
+        // if (n % 10 == 0) {
+        // break;
+        // }
+        // System.out.println(n);
+        // } while (true);
+
+        // Continue Statement to skip an iteration
+
+        // for(int i = 1; i<=5; i++){
+        // if(i==3){
+        // continue;
+        // }
+        // System.out.println(i);
+        // }
+
+        // do {
+        //     System.out.println("Enter number: ");
+        //     int n = sc.nextInt();
+        //     if(n % 10 == 0){
+        //         continue;
+        //     }
+        //     System.out.println(n);
+        // } while (true);
     }
 }

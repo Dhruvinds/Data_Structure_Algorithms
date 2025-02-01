@@ -43,10 +43,22 @@ public class Loops {
         // number = number/10;
         // }
 
-        int count = 1;
-        do {
-            System.out.println(count + " " + "Hello Java!");
-            count++;
-        } while (count <= 10);
+        // Do While:
+
+        // int count = 1;
+        // do {
+        //     System.out.println(count + " " + "Hello Java!");
+        //     count++;
+        // } while (count <= 10);
+
+        // Break Statement:
+
+        // for(int i = 1 ; i<=5; i++){
+        //     if(i==3){
+        //         break;
+        //     }
+        //     System.out.println(i);
+        // }
+        // System.out.println("I am out of the loops!");
     }
 }

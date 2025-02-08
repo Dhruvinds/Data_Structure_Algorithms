@@ -114,17 +114,21 @@ public class Loops {
         // }
 
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
+        
         int sumEven = 0;
         int sumOdd = 0;
+        int choice;;
 
         do{
-            if(num % 2 == 0){
-                sumEven += num;
+            System.out.print("Enter a Number: ");
+            int number = sc.nextInt();
+            if(number % 2 == 0){
+                sumEven += number;
             }else{
-                sumOdd += num;
+                sumOdd += number;
             }
-            int choice = sc.nextInt;
+            System.out.print("Enter your choice< if it would be 0 then you will be out please enter 1 to reenter a number: ");
+            choice = sc.nextInt();
         }while(choice == 1);
 
         System.out.println("Sum of Even number is: " + sumEven);

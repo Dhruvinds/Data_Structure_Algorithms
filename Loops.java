@@ -92,26 +92,43 @@ public class Loops {
 
         // Prime or not prime!
 
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // boolean isPrime = true;
+
+        // if (n == 2) {
+        //     System.out.println("Number is Prime");
+        // } else {
+        //     // for optimize -> for non optimize n-1
+        //     for (int i = 2; i <= Math.sqrt(n); i++) {
+        //         if (n % i == 0) {
+        //             isPrime = false;
+        //         }
+        //     }
+
+        //     if (isPrime == true) {
+        //         System.out.println("Number is Prime");
+        //     } else {
+        //         System.out.println("Number is not Prime");
+        //     }
+        // }
+
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        boolean isPrime = true;
+        int number = sc.nextInt();
+        int sumEven = 0;
+        int sumOdd = 0;
 
-        if (n == 2) {
-            System.out.println("Number is Prime");
-        } else {
-            // for optimize -> for non optimize n-1
-            for (int i = 2; i <= Math.sqrt(n); i++) {
-                if (n % i == 0) {
-                    isPrime = false;
-                }
+        do{
+            if(num % 2 == 0){
+                sumEven += num;
+            }else{
+                sumOdd += num;
             }
+            int choice = sc.nextInt;
+        }while(choice == 1);
 
-            if (isPrime == true) {
-                System.out.println("Number is Prime");
-            } else {
-                System.out.println("Number is not Prime");
-            }
-        }
+        System.out.println("Sum of Even number is: " + sumEven);
+        System.out.println("Sum of Odd number is: " + sumOdd);
 
     }
 }

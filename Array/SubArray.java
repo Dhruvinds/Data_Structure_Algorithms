@@ -7,9 +7,11 @@ public class SubArray {
         for (int i = 0; i < number.length; i++) {
             // int sum = 0;
             int start = i;
+            // System.out.println(start);
             // end logic
             for (int j = i; j < number.length; j++) {
                 int end = j;
+                // System.out.println(end);
                 // printing
                 for (int k = start; k <= end; k++) {
                     System.out.print(number[k] + " ");

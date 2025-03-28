@@ -34,12 +34,25 @@ public class Star {
     // }
     // }
 
-    public static void Floyd(int n) {
-        int counter = 1;
+    // public static void Floyd(int n) {
+    // int counter = 1;
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print(counter + " ");
+    // counter++;
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void Zero_OneTriangle(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print(counter + " ");
-                counter++;
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1 ");
+                } else {
+                    System.out.print("0 ");
+                }
             }
             System.out.println();
         }
@@ -73,6 +86,9 @@ public class Star {
         // InvertedHalfPyramidNumbers(5);
 
         // Floyd's Triangle
-        Floyd(5);
+        // Floyd(5);
+
+        // Zero One Triangle
+        Zero_OneTriangle(5);
     }
 }

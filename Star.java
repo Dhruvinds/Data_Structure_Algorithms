@@ -25,10 +25,21 @@ public class Star {
     // }
     // }
 
-    public static void InvertedHalfPyramidNumbers(int n) {
+    // public static void InvertedHalfPyramidNumbers(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= (n - i + 1); j++) {
+    // System.out.print(j);
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void Floyd(int n) {
+        int counter = 1;
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= (n - i + 1); j++) {
-                System.out.print(j);
+            for (int j = 1; j <= i; j++) {
+                System.out.print(counter + " ");
+                counter++;
             }
             System.out.println();
         }
@@ -59,6 +70,9 @@ public class Star {
         // InvertedPyramid(5);
 
         // Inverted Half Pyramid with numbers
-        InvertedHalfPyramidNumbers(5);
+        // InvertedHalfPyramidNumbers(5);
+
+        // Floyd's Triangle
+        Floyd(5);
     }
 }

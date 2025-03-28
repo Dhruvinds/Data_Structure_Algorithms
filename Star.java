@@ -13,13 +13,22 @@ public class Star {
     // }
     // }
 
-    public static void InvertedPyramid(int n) {
+    // public static void InvertedPyramid(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
+    // for (int k = 1; k <= i; k++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void InvertedHalfPyramidNumbers(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            for (int k = 1; k <= i; k++) {
-                System.out.print("*");
+            for (int j = 1; j <= (n - i + 1); j++) {
+                System.out.print(j);
             }
             System.out.println();
         }
@@ -47,7 +56,9 @@ public class Star {
         // Palidrom(4, 5);
 
         // Inverted Rotated Pyramid:
-        InvertedPyramid(5);
+        // InvertedPyramid(5);
 
+        // Inverted Half Pyramid with numbers
+        InvertedHalfPyramidNumbers(5);
     }
 }

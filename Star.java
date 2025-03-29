@@ -45,16 +45,46 @@ public class Star {
     // }
     // }
 
-    public static void Zero_OneTriangle(int n) {
+    // public static void Zero_OneTriangle(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= i; j++) {
+    // if ((i + j) % 2 == 0) {
+    // System.out.print("1 ");
+    // } else {
+    // System.out.print("0 ");
+    // }
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void Buterfly(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                if ((i + j) % 2 == 0) {
-                    System.out.print("1 ");
-                } else {
-                    System.out.print("0 ");
-                }
+                System.out.print("*");
+            }
+            for (int k = 1; k <= 2 * (n - i); k++) {
+                System.out.print(" ");
+            }
+            for (int l = 1; l <= i; l++) {
+                System.out.print("*");
             }
             System.out.println();
+
+        }
+
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int k = 1; k <= 2 * (n - i); k++) {
+                System.out.print(" ");
+            }
+            for (int l = 1; l <= i; l++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
         }
     }
 
@@ -89,6 +119,10 @@ public class Star {
         // Floyd(5);
 
         // Zero One Triangle
-        Zero_OneTriangle(5);
+        // Zero_OneTriangle(5);
+
+        // Butterfly Pattern
+        Buterfly(4);
+
     }
 }

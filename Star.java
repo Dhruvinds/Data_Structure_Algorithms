@@ -58,35 +58,47 @@ public class Star {
     // }
     // }
 
-    public static void Buterfly(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-            for (int k = 1; k <= 2 * (n - i); k++) {
-                System.out.print(" ");
-            }
-            for (int l = 1; l <= i; l++) {
-                System.out.print("*");
-            }
-            System.out.println();
+    // public static void Buterfly(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print("*");
+    // }
+    // for (int k = 1; k <= 2 * (n - i); k++) {
+    // System.out.print(" ");
+    // }
+    // for (int l = 1; l <= i; l++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
 
-        }
+    // }
 
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
-            }
-            for (int k = 1; k <= 2 * (n - i); k++) {
-                System.out.print(" ");
-            }
-            for (int l = 1; l <= i; l++) {
-                System.out.print("*");
-            }
-            System.out.println();
+    // for (int i = n; i >= 1; i--) {
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print("*");
+    // }
+    // for (int k = 1; k <= 2 * (n - i); k++) {
+    // System.out.print(" ");
+    // }
+    // for (int l = 1; l <= i; l++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
 
-        }
-    }
+    // }
+    // }
+
+    // public static void SolidRhombus(int n) {
+    //     for (int i = 1; i <= n; i++) {
+    //         for (int j = 1; j <= n - i; j++) {
+    //             System.out.print(" ");
+    //         }
+    //         for (int j = 1; j <= n; j++) {
+    //             System.out.print("*");
+    //         }
+    //         System.out.println();
+    //     }
+    // }
 
     public static void main(String[] args) {
         // for (int i = 1; i <= 10; i++) {
@@ -122,7 +134,9 @@ public class Star {
         // Zero_OneTriangle(5);
 
         // Butterfly Pattern
-        Buterfly(4);
+        // Buterfly(4);
 
+        // Solid Rhombus Pattern
+        // SolidRhombus(5);
     }
 }

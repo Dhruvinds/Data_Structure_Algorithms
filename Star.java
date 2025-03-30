@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Star {
 
     // public static void Palidrom(int row, int column) {
@@ -116,32 +118,32 @@ public class Star {
     // }
     // }
 
-    public static void Diamond(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                System.out.print("*");
-            }
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            System.out.println();
-        }
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= 2 * i - 1; j++) {
-                System.out.print("*");
-            }
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print(" ");
-            }
-            System.out.println();
-        }
-    }
+    // public static void Diamond(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 1; j <= 2 * i - 1; j++) {
+    // System.out.print("*");
+    // }
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
+    // System.out.println();
+    // }
+    // for (int i = n; i >= 1; i--) {
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 1; j <= 2 * i - 1; j++) {
+    // System.out.print("*");
+    // }
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
+    // System.out.println();
+    // }
+    // }
 
     public static void main(String[] args) {
         // for (int i = 1; i <= 10; i++) {
@@ -186,6 +188,46 @@ public class Star {
         // HollowRhombus(5);
 
         // Diamond Pattern
-        Diamond(4);
+        // Diamond(4);
+
+        // While Loop Pattern
+        // Inverted Pyramid Pattern
+
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // int total_n_line = n;
+        // int curr_line = 1;
+        // int star = 1;
+        // int space = n - 1;
+
+        // while (curr_line <= total_n_line) {
+        // for (int i = 1; i <= space; i++) {
+        // System.out.print(" ");
+        // }
+        // for (int j = 1; j <= star; j++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // space--;
+        // star++;
+        // curr_line++;
+        // }
+
+        // Half Triangle
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int total_line = n;
+        int curr_line = 1;
+        int star = n;
+
+        while (curr_line <= total_line) {
+            for (int i = 1; i <= star; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            curr_line++;
+            star--;
+        }
+
     }
 }

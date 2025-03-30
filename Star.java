@@ -145,10 +145,34 @@ public class Star {
     // }
     // }
 
-    public static void Reverse_Number(int n) {
+    // public static void Reverse_Number(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= n - i + 1; j++) {
+    // System.out.print(j);
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    // public static void Rhombus(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int j = 1; j <= i - 1; j++) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 1; j <= n; j++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void NumberTriangle(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i + 1; j++) {
-                System.out.print(j);
+            for (int j = 1; j <= i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j <= n; j++) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
@@ -266,7 +290,12 @@ public class Star {
         // }
 
         // Number increasing Reverse Pyramid
-        Reverse_Number(6);
+        // Reverse_Number(6);
+
+        // Rhombus(5);
+
+        // Triangle number
+        NumberTriangle(6);
 
     }
 }

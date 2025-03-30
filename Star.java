@@ -214,20 +214,47 @@ public class Star {
         // }
 
         // Half Triangle
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int total_line = n;
-        int curr_line = 1;
-        int star = n;
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // int total_line = n;
+        // int curr_line = 1;
+        // int star = n;
 
-        while (curr_line <= total_line) {
-            for (int i = 1; i <= star; i++) {
-                System.out.print("*");
-            }
-            System.out.println();
-            curr_line++;
-            star--;
-        }
+        // while (curr_line <= total_line) {
+        // for (int i = 1; i <= star; i++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // curr_line++;
+        // star--;
+        // }
+
+        // Diamond Pattern with no repetition;
+        // Scanner sc = new Scanner(System.in);
+        // int n = sc.nextInt();
+        // // if we are using (n) then we get the triangle
+        // int total_line = 2 * n - 1;
+        // int curr_line = 1;
+        // int space = n - 1;
+        // int star = 1;
+
+        // while (curr_line <= total_line) {
+        //     for (int i = 1; i <= space; i++) {
+        //         System.out.print(" ");
+        //     }
+        //     for (int j = 1; j <= star; j++) {
+        //         System.out.print("*");
+        //     }
+        //     if (curr_line < n) {
+        //         space--;
+        //         star += 2;
+        //     } else {
+        //         space++;
+        //         star -= 2;
+        //     }
+        //     System.out.println();
+        //     curr_line++;
+        // }
 
     }
 }

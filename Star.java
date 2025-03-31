@@ -190,16 +190,28 @@ public class Star {
     // }
     // }
 
-    public static void PalidromTriangle(int n) {
+    // public static void PalidromTriangle(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int s = n - 1; s >= i; s--) {
+    // System.out.print(" ");
+    // }
+    // for (int k = i; k >= 2; k--) {
+    // System.out.print(k + " ");
+    // }
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print(j + " ");
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void TriangleStar(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int s = n - 1; s >= i; s--) {
-                System.out.print("  ");
-            }
-            for (int k = i; k >= 2; k--) {
-                System.out.print(k + " ");
+            for (int p = n - 1; p >= i; p--) {
+                System.out.print(" ");
             }
             for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
+                System.out.print("*" + " ");
             }
             System.out.println();
         }
@@ -328,7 +340,10 @@ public class Star {
         // NumberTriangle(6);
 
         // Palidrome Triangle Pattern
-        PalidromTriangle(6);
+        // PalidromTriangle(6);
+
+        // Triangle Star Pattern
+        TriangleStar(6);
 
     }
 }

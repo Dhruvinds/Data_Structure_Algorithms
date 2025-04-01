@@ -205,13 +205,25 @@ public class Star {
     // }
     // }
 
-    public static void TriangleStar(int n) {
+    // public static void TriangleStar(int n) {
+    // for (int i = 1; i <= n; i++) {
+    // for (int p = n - 1; p >= i; p--) {
+    // System.out.print(" ");
+    // }
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print("*" + " ");
+    // }
+    // System.out.println();
+    // }
+    // }
+
+    public static void InvertedStar(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int p = n - 1; p >= i; p--) {
+            for (int j = 1; j < i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*" + " ");
+            for (int j = 1; j <= n - i + 1; j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
@@ -343,7 +355,10 @@ public class Star {
         // PalidromTriangle(6);
 
         // Triangle Star Pattern
-        TriangleStar(6);
+        // TriangleStar(6);
+
+        // Inverted Pyramid Star
+        InvertedStar(5);
 
     }
 }

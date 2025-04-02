@@ -31,6 +31,9 @@ public class Array {
         int curr_sum = 0;
         int max_sum = Integer.MIN_VALUE;
         int prefix[] = new int[number.length];
+        // Optimized Solution as compared to Brute Force
+        // O(n2)
+
         // Calculate Prefix Array
         prefix[0] = number[0];
         for (int i = 1; i < prefix.length; i++) {

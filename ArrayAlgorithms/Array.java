@@ -61,9 +61,25 @@ public class Array {
         System.out.println("Max sum of Sub Array is: " + max_sum);
     }
 
+    public static void KadanesAlgo(int number[]) {
+        int curr_sum = 0;
+        int max_sum = Integer.MIN_VALUE;
+
+        for (int i = 0; i < number.length; i++) {
+            curr_sum = curr_sum + number[i];
+
+            if (curr_sum < 0) {
+                curr_sum = 0;
+            }
+            max_sum = Math.max(curr_sum, max_sum);
+        }
+        System.out.println("Maximum sum of an array is: " + max_sum);
+    }
+
     public static void main(String[] args) {
-        int number[] = { 1, -2, 6, -1, 3 };
+        int number[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
         // SubArraySum(number);
         PrefixSum(number);
+        KadanesAlgo(number);
     }
 }

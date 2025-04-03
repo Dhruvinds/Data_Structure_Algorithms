@@ -76,10 +76,36 @@ public class Array {
         System.out.println("Maximum sum of an array is: " + max_sum);
     }
 
+    public static void KadanesAlgoNegative(int number2[]) {
+        int curr_sum = 0;
+        int max_sum = Integer.MIN_VALUE;
+        int maxsum_element = Integer.MIN_VALUE;
+
+        for (int i = 0; i < number2.length; i++) {
+            curr_sum = curr_sum + number2[i];
+
+            if (curr_sum < 0) {
+                curr_sum = 0;
+            }
+            max_sum = Math.max(curr_sum, max_sum);
+
+            maxsum_element = Math.max(maxsum_element, number2[i]);
+        }
+
+        if (max_sum == 0) {
+            max_sum = maxsum_element;
+        }
+
+        System.out.println("Max Sum of All Negative Number is: " + max_sum);
+    }
+
     public static void main(String[] args) {
         int number[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+
+        int number2[] = { -1, -2, -3, -4 };
         // SubArraySum(number);
-        PrefixSum(number);
-        KadanesAlgo(number);
+        // PrefixSum(number);
+        // KadanesAlgo(number);
+        KadanesAlgoNegative(number2);
     }
 }
